@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luzmar - Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Luzmar" class="logo-image">
+                    <div class="logo-text">
+                        <h2 class="logo-title">LUZMAR</h2>
+                        <span class="logo-subtitle">confecciones de ropa deportiva</span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Descubre tu Estilo Único</h1>
+            <p>Las mejores tendencias en moda para expresar tu personalidad</p>
+            <a href="#productos" class="cta-button">Ver Colección</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Tienda de ropa">
+        </div>
+    </section>
+
+    <!-- Productos Section -->
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2 class="section-title">Nuestra Colección</h2>
+            <div class="categories">
+                <div class="category-item active" data-category="todos">Todos</div>
+                <div class="category-item" data-category="mujer">Mujer</div>
+                <div class="category-item" data-category="hombre">Hombre</div>
+                <div class="category-item" data-category="accesorios">Accesorios</div>
+            </div>
+            
+            <div class="productos-grid">
+                <!-- Productos Mujer -->
+                <div class="producto-card" data-category="mujer">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Vestido Elegante">
+                        <div class="producto-overlay">
+                            <button class="btn-comprar" onclick="comprarProducto('Vestido Elegante Rojo', 'S/ 89.99')">
+                                <i class="fab fa-whatsapp"></i> Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Vestido Elegante Rojo</h3>
+                        <p class="precio">S/ 89.99</p>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="mujer">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Blusa Casual">
+                        <div class="producto-overlay">
+                            <button class="btn-comprar" onclick="comprarProducto('Blusa Casual Blanca', 'S/ 45.99')">
+                                <i class="fab fa-whatsapp"></i> Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Blusa Casual Blanca</h3>
+                        <p class="precio">S/ 45.99</p>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="mujer">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1506629905607-d13baa41cf2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Falda Plisada">
+                        <div class="producto-overlay">
+                            <button class="btn-comprar" onclick="comprarProducto('Falda Plisada Azul', 'S/ 59.99')">
+                                <i class="fab fa-whatsapp"></i> Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Falda Plisada Azul</h3>
+                        <p class="precio">S/ 59.99</p>
+                    </div>
+                </div>
+
+                <!-- Productos Hombre -->
+                <div class="producto-card" data-category="hombre">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Camisa Formal">
+                        <div class="producto-overlay">
+                            <button class="btn-comprar" onclick="comprarProducto('Camisa Formal Azul', 'S/ 75.99')">
+                                <i class="fab fa-whatsapp"></i> Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Camisa Formal Azul</h3>
+                        <p class="precio">S/ 75.99</p>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="hombre">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1571945153237-4929e783af4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Polo Casual">
+                        <div class="producto-overlay">
+                            <button class="btn-comprar" onclick="comprarProducto('Polo Casual Negro', 'S/ 39.99')">
+                                <i class="fab fa-whatsapp"></i> Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Polo Casual Negro</h3>
+                        <p class="precio">S/ 39.99</p>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="hombre">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1594938328865-17ac67c1c8cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pantalón Chino">
+                        <div class="producto-overlay">
+                            <button class="btn-comprar" onclick="comprarProducto('Pantalón Chino Beige', 'S/ 69.99')">
+                                <i class="fab fa-whatsapp"></i> Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Pantalón Chino Beige</h3>
+                        <p class="precio">S/ 69.99</p>
+                    </div>
+                </div>
+
+                <!-- Accesorios -->
+                <div class="producto-card" data-category="accesorios">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bolso de Cuero">
+                        <div class="producto-overlay">
+                            <button class="btn-comprar" onclick="comprarProducto('Bolso de Cuero Premium', 'S/ 129.99')">
+                                <i class="fab fa-whatsapp"></i> Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Bolso de Cuero Premium</h3>
+                        <p class="precio">S/ 129.99</p>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="accesorios">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Zapatillas Deportivas">
+                        <div class="producto-overlay">
+                            <button class="btn-comprar" onclick="comprarProducto('Zapatillas Deportivas', 'S/ 89.99')">
+                                <i class="fab fa-whatsapp"></i> Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Zapatillas Deportivas</h3>
+                        <p class="precio">S/ 89.99</p>
+                    </div>
+                </div>
+
+                <div class="producto-card" data-category="accesorios">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1523170335258-f5c216654a17?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Reloj Elegante">
+                        <div class="producto-overlay">
+                            <button class="btn-comprar" onclick="comprarProducto('Reloj Elegante Dorado', 'S/ 199.99')">
+                                <i class="fab fa-whatsapp"></i> Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Reloj Elegante Dorado</h3>
+                        <p class="precio">S/ 199.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre Luzmar</h2>
+                    <p>Somos una tienda de ropa comprometida con ofrecer las mejores tendencias de moda con calidad excepcional. Nuestra misión es ayudarte a expresar tu estilo único con prendas cuidadosamente seleccionadas.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h3>Envío Rápido</h3>
+                            <p>Entrega en 24-48 horas</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-medal"></i>
+                            <h3>Calidad Premium</h3>
+                            <p>Productos de alta calidad</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <h3>Soporte 24/7</h3>
+                            <p>Atención personalizada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sobre nosotros">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Av. Principal 123, Ciudad</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+1 234 567 8900</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@luzmar.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>+1 234 567 8900</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Tu nombre" required>
+                        <input type="email" placeholder="Tu email" required>
+                        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Luzmar" class="footer-logo-image">
+                    </div>
+                    <p>Tu tienda de moda favorita con las mejores tendencias y calidad premium.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categorías</h3>
+                    <ul>
+                        <li><a href="#">Ropa de Mujer</a></li>
+                        <li><a href="#">Ropa de Hombre</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Información</h3>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Guía de Tallas</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Luzmar. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/1234567890?text=Hola! Me interesa conocer más sobre sus productos" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
