@@ -93,6 +93,33 @@ function filterProducts(category) {
     });
 }
 
+// Función para solicitar servicios
+function solicitarServicio(nombreServicio, precio) {
+    // Crear mensaje personalizado para WhatsApp
+    const mensaje = `¡Hola! Me interesa el siguiente servicio:
+
+🎨 *${nombreServicio}*
+💰 Precio: ${precio}
+
+Me gustaría obtener más información sobre:
+- Tiempo de entrega
+- Proceso de trabajo
+- Requisitos del diseño
+- Formas de pago
+- Ver ejemplos de trabajos anteriores
+
+¡Gracias!`;
+    
+    // Crear URL de WhatsApp
+    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensaje)}`;
+    
+    // Abrir WhatsApp en una nueva ventana
+    window.open(whatsappURL, '_blank');
+    
+    // Mostrar mensaje de confirmación
+    showNotification('Redirigiendo a WhatsApp para consultar servicio...', 'success');
+}
+
 // Función principal para comprar producto
 function comprarProducto(nombreProducto, precio) {
     // Crear mensaje personalizado para WhatsApp
